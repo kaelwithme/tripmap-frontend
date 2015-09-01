@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/skin.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<title>Tripmap</title>
+</head>
+<body ng-app="tripmap" class="map03 map04">
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/mainController.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<div class="main mainpage div04">
+
+	<section id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458921.8761477846!2d-74.0710726059952!3d40.9181850156642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sph!4v1439541175088" width="1200" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></section>
+	<aside id="sidebar">
+		<section class="topsec">
+			<div class="logosmall"></div>
+			<a href="profile.html">My Profile</a>
+			<br class="clr">
+			<h2>Adding new place</h2>
+			<div class="prgrs_trckr"><div class="trck"><span><i>25%</i><i>50%</i><i>75%</i><i>100%</i></span></div></div>
+			<p>Share your tips and experience so you can help friends and travelers who see your map</p>
+			
+		</section>
+		<div class="bgtopsec"></div>
+		<div class="clr"></div>
+		<section class="botsec">
+			<div class="wrapper">
+				<form>
+					<section>
+						<label>Directions Tips:</label><br class="clr" />
+						<textarea>Any tips for finding this place?</textarea>
+					</section>
+					<section>
+						<div class="input-wcaption cf c1">
+							<div class="dcaption">http://</div>
+							<input type="text" value="example.com" />
+						</div>
+					</section>
+					<section>
+						<div class="input-wcaption cf c2">
+							<div class="dcaption">FB page:</div>
+							<input type="text" value="facebook.com/example" />
+						</div>
+					</section>
+					<section class="img-upld">
+						<div class="upld-box">
+							<i class="icon"></i>
+							<h3>Drag'n'Drop images here</h3>
+							<span>or</span><br class="clr" />
+							<a href="#">Browse on your computer</a>
+						</div>
+					</section>
+					<section class="open-hrs">
+						<label class="hide-this">Operating hours:</label>
+						<section class="opn-slct cf">
+							<div class="hide-this">
+								<select>
+									<option>6:00 AM</option>
+									<option>7:00 AM</option>
+									<option>8:00 AM</option>
+									<option>9:00 AM</option>
+									<option>10:00 AM</option>
+									<option>11:00 AM</option>
+								</select>
+								<span class="slctdash">-</span>
+								<select>
+
+									<option>3:00 PM</option>
+									<option>4:00 PM</option>
+									<option>5:00 PM</option>
+									<option>6:00 PM</option>
+									<option>7:00 PM</option>
+									<option>8:00 PM</option>
+									<option>9:00 PM</option>
+									<option>10:00 PM</option>
+									<option>11:00 PM</option>
+									<option>12:00 MM</option>
+								</select>
+							</div>
+							<section class="daysweekbox cf">
+							<label>Operating Hours:</label><br class="clr">
+									<aside class="timechoose cf">
+										<label class="checkbox cf">
+										    <input type="checkbox" value="Monday" />
+										    <span class="chckmrker"></span>
+										    <span class="chcklabl">Monday</span>
+										</label>
+										<select>
+											<option>6:00 AM</option>
+											<option>7:00 AM</option>
+											<option>8:00 AM</option>
+											<option>9:00 AM</option>
+											<option>10:00 AM</option>
+											<option>11:00 AM</option>
+									 	</select>
+										<span class="slctdash">-</span>
+										<select>
+											<option>3:00 PM</option>
+											<option>4:00 PM</option>
+											<option>5:00 PM</option>
+											<option>6:00 PM</option>
+											<option>7:00 PM</option>
+											<option>8:00 PM</option>
+											<option>9:00 PM</option>
+											<option>10:00 PM</option>
+											<option>11:00 PM</option>
+											<option>12:00 MM</option>
+									</select>
+									</aside>
+									<aside class="timechoose cf">
+										<label class="checkbox cf">
+										    <input type="checkbox" value="Tuesday" />
+										    <span class="chckmrker"></span>
+										    <span class="chcklabl">Tuesday</span>
+										</label>
+										<select>
+											<option>6:00 AM</option>
+											<option>7:00 AM</option>
+											<option>8:00 AM</option>
+											<option>9:00 AM</option>
+											<option>10:00 AM</option>
+											<option>11:00 AM</option>
+									 	</select>
+										<span class="slctdash">-</span>
+										<select>
+											<option>3:00 PM</option>
+											<option>4:00 PM</option>
+											<option>5:00 PM</option>
+											<option>6:00 PM</option>
+											<option>7:00 PM</option>
+											<option>8:00 PM</option>
+											<option>9:00 PM</option>
+											<option>10:00 PM</option>
+											<option>11:00 PM</option>
+											<option>12:00 MM</option>
+									</select>
+									</aside>
+									<aside class="timechoose cf">
+										<label class="checkbox cf">
+										    <input type="checkbox" value="Wednesday" />
+										    <span class="chckmrker"></span>
+										    <span class="chcklabl">Wednesday</span>
+										</label>
+										<select>
+											<option>6:00 AM</option>
+											<option>7:00 AM</option>
+											<option>8:00 AM</option>
+											<option>9:00 AM</option>
+											<option>10:00 AM</option>
+											<option>11:00 AM</option>
+									 	</select>
+										<span class="slctdash">-</span>
+										<select>
+											<option>3:00 PM</option>
+											<option>4:00 PM</option>
+											<option>5:00 PM</option>
+											<option>6:00 PM</option>
+											<option>7:00 PM</option>
+											<option>8:00 PM</option>
+											<option>9:00 PM</option>
+											<option>10:00 PM</option>
+											<option>11:00 PM</option>
+											<option>12:00 MM</option>
+									</select>
+									</aside>
+									<aside class="timechoose cf">
+										<label class="checkbox cf">
+										    <input type="checkbox" value="Thursday" />
+										    <span class="chckmrker"></span>
+										    <span class="chcklabl">Thursday</span>
+										</label>
+										<select>
+											<option>6:00 AM</option>
+											<option>7:00 AM</option>
+											<option>8:00 AM</option>
+											<option>9:00 AM</option>
+											<option>10:00 AM</option>
+											<option>11:00 AM</option>
+									 	</select>
+										<span class="slctdash">-</span>
+										<select>
+											<option>3:00 PM</option>
+											<option>4:00 PM</option>
+											<option>5:00 PM</option>
+											<option>6:00 PM</option>
+											<option>7:00 PM</option>
+											<option>8:00 PM</option>
+											<option>9:00 PM</option>
+											<option>10:00 PM</option>
+											<option>11:00 PM</option>
+											<option>12:00 MM</option>
+									</select>
+									</aside>
+									<aside class="timechoose cf">
+										<label class="checkbox cf">
+										    <input type="checkbox" value="Friday" />
+										    <span class="chckmrker"></span>
+										    <span class="chcklabl">Friday</span>
+										</label>
+										<select>
+											<option>6:00 AM</option>
+											<option>7:00 AM</option>
+											<option>8:00 AM</option>
+											<option>9:00 AM</option>
+											<option>10:00 AM</option>
+											<option>11:00 AM</option>
+									 	</select>
+										<span class="slctdash">-</span>
+										<select>
+											<option>3:00 PM</option>
+											<option>4:00 PM</option>
+											<option>5:00 PM</option>
+											<option>6:00 PM</option>
+											<option>7:00 PM</option>
+											<option>8:00 PM</option>
+											<option>9:00 PM</option>
+											<option>10:00 PM</option>
+											<option>11:00 PM</option>
+											<option>12:00 MM</option>
+									</select>
+									</aside>
+									<aside class="timechoose cf">
+										<label class="checkbox cf">
+										    <input type="checkbox" value="Saturday" />
+										    <span class="chckmrker"></span>
+										    <span class="chcklabl">Saturday</span>
+										</label>
+										<select>
+											<option>6:00 AM</option>
+											<option>7:00 AM</option>
+											<option>8:00 AM</option>
+											<option>9:00 AM</option>
+											<option>10:00 AM</option>
+											<option>11:00 AM</option>
+									 	</select>
+										<span class="slctdash">-</span>
+										<select>
+											<option>3:00 PM</option>
+											<option>4:00 PM</option>
+											<option>5:00 PM</option>
+											<option>6:00 PM</option>
+											<option>7:00 PM</option>
+											<option>8:00 PM</option>
+											<option>9:00 PM</option>
+											<option>10:00 PM</option>
+											<option>11:00 PM</option>
+											<option>12:00 MM</option>
+									</select>
+									</aside>
+									<aside class="timechoose cf">
+										<label class="checkbox cf">
+										    <input type="checkbox" value="Sunday" />
+										    <span class="chckmrker"></span>
+										    <span class="chcklabl">Sunday</span>
+										</label>
+										<select>
+											<option>6:00 AM</option>
+											<option>7:00 AM</option>
+											<option>8:00 AM</option>
+											<option>9:00 AM</option>
+											<option>10:00 AM</option>
+											<option>11:00 AM</option>
+									 	</select>
+										<span class="slctdash">-</span>
+										<select>
+											<option>3:00 PM</option>
+											<option>4:00 PM</option>
+											<option>5:00 PM</option>
+											<option>6:00 PM</option>
+											<option>7:00 PM</option>
+											<option>8:00 PM</option>
+											<option>9:00 PM</option>
+											<option>10:00 PM</option>
+											<option>11:00 PM</option>
+											<option>12:00 MM</option>
+									</select>
+									</aside>
+									<span class="chck-all">or <a href="#">select all days</a></span>
+									
+							</section>
+							<span class="daysofweek">All days or <a href="#">select days of the week</a></span>
+						</section>
+						
+					</section>
+					<br class="clr" />
+					<section class="price-range cf">
+							<label>Average Price Range:</label><br class="clr" />
+							<div class="prycrng-mtr">
+								<section class="price-slct cf">
+									<select>
+										<option>$5</option>
+										<option>$10</option>
+										<option>$15</option>
+										<option>$25</option>
+										<option>$50</option>
+										<option>$75</option>
+									</select>
+									<span class="slctdash">-</span>
+									<select>
+										<option>$5</option>
+										<option>$10</option>
+										<option>$15</option>
+										<option>$25</option>
+										<option>$50</option>
+										<option>$75</option>
+									</select>
+									<br class="clr">
+									
+								</section>
+
+
+							</div>
+							<select>
+								<option>$ USA</option>
+								<option>$ CAD</option>
+								<option>&euro; EUR</option>
+								<option>&pound; PND</option>
+								<option>&#3647 BAHT</option>
+								<option>&yen; YEN</option>
+							</select>
+					</section>
+					<section class="wifi">
+						<label>WiFi speed:</label><br class="clr" />
+						<section class="wifi-slct cf">
+							<select>
+								<option>1MB</option>
+								<option>3MB</option>
+								<option>5MB</option>
+								<option>7MB</option>
+								<option>10MB</option>
+								<option>20MB</option>
+							</select>
+							<span class="slctdash">-</span>
+							<select>
+								<option>1MB</option>
+								<option>3MB</option>
+								<option>5MB</option>
+								<option>7MB</option>
+								<option>10MB</option>
+								<option>20MB</option>
+							</select>
+							<br class="clr">
+							<span class="desc"><span>Download</span><span>Upload</span></span>
+						</section>
+					</section>
+				</form>
+			</div>
+			<footer class="botsec-foot cf">
+				<a href="map03.html">&laquo; Back</a>
+				<a href="#" class="skipd">Skip details</a>
+				<button class="cf active" onclick="location.href='map05.html'">Add New Place <i class="icon"></i></button>
+				<!--**use if active** <button class="active cf">Add New Place <i class="icon"></i></button> -->
+		</footer>
+			
+		</section>
+		
+		
+
+	</section>
+</div>
+</body>
+</html>

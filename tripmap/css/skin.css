@@ -1,0 +1,1286 @@
+/** for the tripmap style */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+body{background: #f2eee9; } 
+
+.main{overflow: hidden; height: 100vh;
+        background: #ccc; }
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+.clr{clear: both;}
+
+*{font-family: 'Lato', sans-serif; font-weight: normal; -moz-font-smoothing: grayscale; outline: 0;}
+
+
+.welcome h2{font-family: 'Lato', sans-serif; text-align: center; margin: 0; font-weight: 800;
+    font-size: 4.5em;}
+.welcome h4{    font-size: 3em; text-align: center; font-weight: 400; margin: 5px 0 0 0;}
+.welcome form input.placeinp{ margin: 6% auto 7%;
+    display: block;
+    width: 80%;
+    padding: 2%;
+    font-size: 24px;
+    color: #40382c;
+    font-weight: 300;
+    border: 1px solid #ccc;
+    border-radius: 6px;}
+.welcome form input.placego{
+	    width: 60%;
+    display: block;
+    margin: 0 auto;
+    padding: 3%;
+    font-size: 24px;
+    color: #fff;
+    background: #5fb45e;
+    border: 0;
+    border-radius: 6px;
+    font-weight: 300;
+    outline: 0;
+}
+
+.welcome .placego{
+	     width: 60%;
+	    height: 60px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 2.4em;
+    font-size: 24px;
+    color: #fff;
+    background: #5fb45e;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    border-radius: 6px;
+    font-weight: 300;
+    outline: 0;
+}
+.welcome .placego:active{
+	height: 60px;
+	border-top: 2px solid #006400;
+    background: #56A255;
+}
+
+/** startpage **/
+
+
+.startpage #map{width: 100%;  background: url('../images/map.jpg') 0 -2px repeat; float: left;}
+.popup{width: 100%;     
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%; position: absolute; background: rgba(10, 10, 10, 0.8); z-index: 9998; overflow: hidden;}
+.startpage .welcome{margin: 0 auto; position: relative; width: 55%; min-height: 400px; background: #fff; margin-top: 10%; padding: 1.5%;
+	border: 1px solid #dfdfdf; box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 6px; color: #40382c;
+}
+
+/** end startpage **/
+
+/** prelaunch landing **/
+
+body.landing, body.startpage{background: url('../images/map.jpg') 0 -2px repeat; }
+
+.landing #map{width: 100%;  background: url('../images/map.jpg') 0 -2px repeat; float: left;}
+
+.landing .welcome{background: none; border: 0;  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0); color: #fff;
+    margin: 0 auto; position: relative; width: 52%; min-height: 400px; margin-top: 10%; padding: 1.5%;
+}
+
+
+
+.landing .welcome h2 span{color: #5FB45E; font-weight: 800;}
+
+.landing .welcome h2{font-size: 7.5em;}
+.landing .welcome form {position: relative; margin: 4% auto; width: 500px; display: block;  padding: 0;}
+
+.landing .welcome form input.placeinp{
+    margin: 0 auto 0;
+    display: inline-block;
+    float: left;
+    width: 85%;
+    padding: 2.6%;
+    font-size: 24px;
+    color: #40382c;
+    font-weight: 300;
+    border: none;
+    border-radius: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+
+}
+.landing .welcome form button.placego{
+        width: 15%;
+    display: inline-block;
+    float: left;
+    font-size: 24px;
+    color: #fff;
+    background: #5fb45e;
+    border: 0;
+    border-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-weight: 300;
+    outline: 0;
+}
+
+.landing .welcome form button.placego span{display: none;}
+
+.landing .welcome i.fa{font-size: 1.3em; vertical-align: middle; display: block; margin: 0 3px 0 0;}
+
+.landing .welcome .placego{
+         width: 60%;
+        height: 60px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 2.4em;
+    font-size: 24px;
+    color: #fff;
+    background: #5fb45e;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    border-radius: 6px;
+    font-weight: 300;
+    outline: 0;
+}
+.landing .landing .welcome h2{font-size: 7.5em;}
+
+.landing .welcome p{text-align: center; margin: 0; font-size: 1.5em; font-weight: 300;}
+
+@media screen and (max-width: 1000px){
+    .landing .welcome{width: 80%;}
+
+}
+
+@media screen and (max-width: 600px){
+    .landing .welcome{width: 100%; padding: 10px;}
+    .landing .welcome form{width: auto;}
+
+}
+
+@media screen and (max-width: 510px){
+    .landing .welcome form input.placeinp{width: 100%; display: block; float: none; 
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    }
+    .landing .welcome form button.placego{
+        width: 100%;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        margin-top: 5%;
+    }
+
+    .landing .welcome form button.placego span{display: inline-block; font-size: 1.3em; margin-right: 10px;}
+    .landing .welcome i.fa{font-size: 1.3em; vertical-align: middle; display: inline-block; margin: 0 3px 10px 0;}
+}
+
+@media screen and (max-width: 420px){
+    .landing .welcome h2{font-size: 6em;}
+    .welcome h4{font-size: 2.5em;}
+}
+
+@media screen and (max-width: 335px){
+    .landing .welcome h2{font-size: 4em;}
+    .welcome h4{font-size: 1.5em;}
+
+}
+
+
+
+
+/** prelaunch landing end **/
+
+/** main divs positioning */
+
+.main #map{
+        height: 100%;
+        width: 70%;
+        background: #eee;
+        float: left;
+        position: relative;
+}
+.main #map iframe{ position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;}
+.main #sidebar{
+        float: left;
+        width: 30%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        background: #f2eee9;
+        box-shadow: 0 -2px 7px rgba(124, 124, 124, 0.5);
+}
+
+
+
+.main #sidebar .blackoverlay{ height: 209px; /*background: rgba(0, 0, 0, 0.38); position: absolute; overflow: hidden;*/}
+
+
+.main #sidebar .bgtopsec{height: 209px; background: rgba(0, 0, 0, 0.38) url('../images/new-york-city-street-2560x1440.jpg'); background-size: 100%; overflow: hidden; 
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%); 
+    -moz-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+    -o-filter: brightness(50%);
+
+ }
+
+
+
+ .main #sidebar .topsec{ position: absolute; z-index: 99999; padding: 3%; width: 100%; height: 209px;
+
+
+ }
+
+.mapview #sidebar .topsec{    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+99,000000+100&amp;0+62,0.77+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 62%, rgba(0,0,0,0.75) 99%, rgba(0,0,0,0.77) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(62%,rgba(0,0,0,0)), color-stop(99%,rgba(0,0,0,0.75)), color-stop(100%,rgba(0,0,0,0.77))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 62%,rgba(0,0,0,0.75) 99%,rgba(0,0,0,0.77) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 62%,rgba(0,0,0,0.75) 99%,rgba(0,0,0,0.77) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 62%,rgba(0,0,0,0.75) 99%,rgba(0,0,0,0.77) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 62%,rgba(0,0,0,0.75) 99%,rgba(0,0,0,0.77) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#c4000000',GradientType=0 ); /* IE6-9 */}
+
+
+#sidebar .logosmall{/*retina**background: url('../images/iconsheet.png') no-repeat -36px -26px;
+    background-size: 433px 300px;
+    width: 51px;
+    height: 11px;*/
+
+    background: url('../images/iconsheet.png') no-repeat -71px -52px;
+    width: 102px;
+    height: 22px;
+    float: left;
+   
+}
+#sidebar .topsec a{color: #fff; float: right; display: inline-block; font-size: 1em;}
+#sidebar .topsec span{color: #fff; margin-top: 135px; font-size: 1.336em; font-weight: 300; float: left;}
+
+#sidebar .botsec{
+    overflow-x: hidden; overflow-y: scroll; }
+
+/* adjust style on mac    
+
+.mac #sidebar .botsec{
+    height: 70%;
+}
+
+.mac .div03 #sidebar .botsec .wrapper{height: auto;}
+.mac .div02 #sidebar .botsec .wrapper{height: 100%;}
+
+/* adjust style on  */  
+
+.div02 #sidebar .botsec .wrapper{border-bottom: 0;}
+
+#sidebar .botsec .wrapper{padding: 3%; border-bottom: 1px solid #EAE3DA;}   
+
+.div05 #sidebar .botsec .wrapper{border-bottom: none;} 
+
+#sidebar .botsec h1{text-align: center; font-size: 2em;}
+#sidebar .botsec .addbtn_1place{width: 50%; padding: 3%; border-radius: 6px; color: #fff; margin: 25px auto; display: block; font-size: 1.143em; 
+    border: 0; background: #5fb45e;
+
+}
+
+#sidebar .botsec .addbtn_1place:active{border-top: 2px solid #006400; height: 46.5px; background: #56A255;}
+#sidebar .botsec .addbtn_1place .icon{background: url('../images/iconsheet.png') no-repeat -2px -144px;
+    width: 21px;
+    height: 24px; float: left; color: #5fb45e; font-size: 0.857em; }
+#sidebar .botsec .bagdark{background: url('../images/iconsheet.png') no-repeat -505px 0;
+    width: 168px;
+    height: 211px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* add place*/
+
+
+.map03 #sidebar .bgtopsec{background: #5c5148; -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+    -moz-filter: brightness(100%);
+    -ms-filter: brightness(100%);
+    -o-filter: brightness(100%);
+}
+
+.map03 #sidebar .topsec h2{font-size: 2.286em; color: #fff; text-align: center; margin: 20px 0 0 0;}
+.map03 #sidebar .topsec .prgrs_trckr{background: #fff; height: 16px; width: 65%; margin: 5px auto; display: block; border-radius: 2px; position: relative;}
+.map03 #sidebar .topsec .prgrs_trckr .trck{background: #5fb45e; height: 16px; width: 10%; border-radius: 2px;}
+.map03 #sidebar .topsec p{text-align: center; color: #fff; display: block; margin-top: 20px;}
+
+
+.map03 #sidebar .topsec .prgrs_trckr span{   
+    float: left;
+    margin: 2px 0 0 0;
+    font-size: 0.643em;
+    color: #fff;
+} 
+
+.map03 #sidebar .topsec .prgrs_trckr span i{padding: 0 0 0 0; margin-left: 37px;}
+
+
+/* add place form 1 */
+.map03 #sidebar .botsec form section{margin-bottom: 35px;}
+.map03 #sidebar .botsec label{font-size: 1em; font-weight: 300; color: ##282828;}
+.map03 #sidebar .botsec input[type="text"]{width: 100%; font-size: 1.429em; font-weight: 300; color: #bbbbbb; padding: 8px 10px; border: 0; border-radius: 3px;}
+
+.map03 #sidebar .botsec textarea{width: 100%; font-size: 1.429em; font-weight: 300; color: #bbbbbb; padding: 8px 10px; border: 0; border-radius: 3px; resize: none;}
+
+
+/** map it btns **/
+
+.map03 #sidebar .botsec form section.mapit button{background: 0; border: 0; font-size: 0.857em; font-weight: 300; color: #5c5148; width: 25%;    
+    margin: 0 0 10px 0;
+    float: left;
+    padding-bottom: 3px;}
+
+.map03 #sidebar .botsec form section.mapit button.btn1 .icon{
+    background: url('../images/iconsheet.png') no-repeat -102px -493px;
+    width: 46px;
+    height: 46px;
+    display: block;
+    margin: 10px auto;
+}
+.map03 #sidebar .botsec form section.mapit button.btn1:hover > .icon{
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    background: url('../images/iconsheet.png') no-repeat -102px -547px;
+    width: 46px;
+    height: 46px;
+}
+.map03 #sidebar .botsec form section.mapit button.btn2 .icon{
+    background: url('../images/iconsheet.png') no-repeat -54px -493px;
+    width: 40px;
+    height: 46px;
+    display: block;
+    margin: 10px auto;
+}
+.map03 #sidebar .botsec form section.mapit button.btn2:hover > .icon{
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    background: url('../images/iconsheet.png') no-repeat -54px -547px;
+    width: 40px;
+    height: 46px;
+}
+.map03 #sidebar .botsec form section.mapit button.btn3 .icon{
+    background: url('../images/iconsheet.png') no-repeat -153px -494px;
+    width: 46px;
+    height: 46px;
+    display: block;
+    margin: 10px auto;
+}
+.map03 #sidebar .botsec form section.mapit button.btn3:hover > .icon{
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    background: url('../images/iconsheet.png') no-repeat -153px -548px;
+    width: 46px;
+    height: 46px;
+}
+.map03 #sidebar .botsec form section.mapit button.btn4 .icon{
+    background: url('../images/iconsheet.png') no-repeat -1px -511px;
+    width: 46px;
+    height: 29px;
+    display: block;
+    margin: 20px auto 17px;
+}
+.map03 #sidebar .botsec form section.mapit button.btn4:hover > .icon{
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    background: url('../images/iconsheet.png') no-repeat -2px -565px;
+    width: 46px;
+    height: 29px;
+}
+
+/** map it btns end **/
+
+.map03 #sidebar section.catsec .slct{width:85%; display: inline-block;}
+
+.map03 #sidebar section.catsec small{font-size: 0.714em; color: #282828; font-weight: 300; float: right; display: inline-block; margin: 5px 2px 0 0;}
+
+.map03 #sidebar section.catsec select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%; font-size: 1.429em; 
+    font-weight: 300; 
+    color: #5c5148;
+    padding: 6px 10px; 
+    border: 0; 
+    border-radius: 3px; 
+    cursor: pointer; 
+    background: #fff url('../images/selectbg2.png') 100% 47% repeat-y;
+
+}
+
+.map03 #sidebar section.catsec .slct-icon{
+     overflow: hidden;
+     background: url('../images/iconsheet.png') no-repeat -414px -27px;
+     width: 11px;
+     height: 10px;
+     margin: 17px 0 0 67%;
+     position: absolute;
+     float: right;
+
+}
+
+.map03 #sidebar section.catsec select > option{-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; font-weight: 300; cursor: pointer;}
+
+.map03 #sidebar section.catsec .clr-pckr{background: url('../images/iconsheet.png') no-repeat -214px -503px;
+    width: 40px;
+    height: 40px; float: right; border: 0;}
+.map03 #sidebar section.catsec .clr-pckr:hover{background: url('../images/iconsheet.png') no-repeat -255px -503px;
+    width: 40px;
+    height: 40px;}
+.map03 #sidebar section.catsec .clrbox::before{}
+.map03 #sidebar section.catsec .clrbox{background: #fff; width: 147px; height: 153px;}
+
+.map03 #sidebar section.revw textarea{width: 100%; border: 0; border-radius: 3px; padding: 8px 10px; resize: none; 
+    font-size: 1.429em;
+    font-weight: 300;
+    color: #bbbbbb;
+}
+
+.map03 #sidebar section.revw-stars{}
+.map03 #sidebar section.revw-stars .ratestars button.star-inactive{
+    background: url('../images/iconsheet.png') no-repeat -91px -163px;
+    width: 17px;
+    height: 16px;
+    border: 0;
+}
+.map03 #sidebar section.revw-stars .ratestars button.star-active{
+    background: url('../images/iconsheet.png') no-repeat -71px -163px;
+    width: 17px;
+    height: 16px;
+     border: 0;
+}
+.map03 #sidebar section.revw-stars .ratestars button.star-clicked{
+    background: url('../images/iconsheet.png') no-repeat -71px -163px;
+    width: 17px;
+    height: 16px;
+     border: 0;
+}
+.map03 #sidebar section.revw-stars .ratestars button:nth-child(1){
+    background: url('../images/iconsheet.png') no-repeat -71px -163px;
+    width: 17px;
+    height: 16px;
+
+}
+
+
+
+/* map it actions */
+
+/** input address */
+
+.map03 #sidebar .botsec .mapaction .inputadd{display: none;}
+
+.map03 #sidebar .botsec .mapaction .inputadd textarea{width: 100%; padding: 8px 10px; border: 0;
+    border-radius: 3px;
+    resize: none;
+    font-size: 1.429em;
+    font-weight: 300;
+    color: #5c5148;
+
+}
+.map03 #sidebar .botsec .mapaction .inputadd button{float: right; background: #ded0bf; padding: 1% 2%; border-radius: 5px;
+    font-size: 1em;
+    color: #5c5148;
+    font-weight: 300;
+    width: 30%;
+    margin-top: 4px;
+}
+
+.map03 #sidebar .botsec .mapaction .inputadd button:active{
+    border-top: 1px solid #5c5148;
+    padding: 1% 2% 0.7%;
+    background: #C8BBAC;
+}
+
+
+.map03 #sidebar .botsec form section.mapit button.active-btn4{ 
+    background: 0; border: 0; font-size: 0.857em; font-weight: 300; width: 25%;    
+    margin: 0 0 10px 0;
+    float: left;
+    padding-bottom: 3px;
+    color: #5fb45e;
+    border-bottom: 2px solid #5fb45e;
+
+}
+
+.map03 #sidebar .botsec form section.mapit button.active-btn4 .icon{ 
+    background: url('../images/iconsheet.png') no-repeat -2px -565px;
+    width: 46px;
+    height: 29px;
+    display: block;
+    margin: 20px auto 17px;
+    ;}
+/** input address end */
+
+/** input gps */
+
+.map03 #sidebar .botsec form section.mapit .mapaction .inputgps{display: none;}
+
+.map03 #sidebar .botsec form section.mapit .mapaction .inputgps aside{width: 32%; float: left; margin-right: 10px;}
+
+.map03 #sidebar .botsec form section.mapit .mapaction .inputgps button{width: 30%; float: left; font-size: 1.429em;
+    color: #5c5148;
+    font-weight: 300;
+    background: #ded0bf;
+    border-radius: 5px;
+    padding: 2.5% 0;
+    margin-top: 24px;
+}
+.map03 #sidebar .botsec form section.mapit .mapaction .inputgps button:active{
+    border-top: 2px solid #857D73;
+    background: #C8BBAC;
+    padding: 2% 0 2.5%;
+}
+
+.map03 #sidebar .botsec form section.mapit button.active-btn3{ 
+    background: 0; border: 0; font-size: 0.857em; font-weight: 300; width: 25%;    
+    margin: 0 0 10px 0;
+    float: left;
+    padding-bottom: 3px;
+    color: #5fb45e;
+    border-bottom: 2px solid #5fb45e;
+
+}
+
+.map03 #sidebar .botsec form section.mapit button.active-btn3 .icon{ 
+    background: url('../images/iconsheet.png') no-repeat -153px -548px;
+    width: 46px;
+    height: 46px;
+    display: block;
+    margin: 10px auto;
+    }
+
+/** drop pin */
+
+.map03 #sidebar .botsec form section.mapit button.active-btn2{ 
+    background: 0; border: 0; font-size: 0.857em; font-weight: 300; width: 25%;    
+    margin: 0 0 10px 0;
+    float: left;
+    padding-bottom: 3px;
+    color: #5fb45e;
+    border-bottom: 2px solid #5fb45e;
+
+}
+
+.map03 #sidebar .botsec form section.mapit button.active-btn2 .icon{ 
+    background: url('../images/iconsheet.png') no-repeat -54px -547px;
+    width: 40px;
+    height: 46px;
+    display: block;
+    margin: 10px auto;
+    }
+
+.droppin{padding-top: 3%;
+float: left;
+padding-left: 5%; display: none;}
+.droppin button.thepin{display: inline-block; float: left;}
+
+.droppin aside i{background: url('../images/iconsheet.png') no-repeat -144px -80px;
+    width: 35px;
+    height: 40px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 7% 0 0 2%;
+    font-size: 1.286em;
+    font-style: normal;
+    z-index: 998;
+    margin-left: 10%;
+    position: relative;
+    float: left;
+}
+
+
+.droppin .shadow{background: url('../images/iconsheet.png') no-repeat -144px -170px;
+    width: 50px;
+    height: 22px; position: relative;
+    z-index: 997;
+    margin-top: -13%;
+}
+
+.droppin p{font-style: 1.286em; font-weight: 300; color: #5c5148;}
+
+/** map it for me **/
+
+.map03 #sidebar .botsec form section.mapit button.active-btn1{ 
+    background: 0; border: 0; font-size: 0.857em; font-weight: 300; width: 25%;    
+    margin: 0 0 10px 0;
+    float: left;
+    padding-bottom: 3px;
+    color: #5fb45e;
+    border-bottom: 2px solid #5fb45e;
+
+}
+
+.map03 #sidebar .botsec form section.mapit button.active-btn1 .icon{ 
+    background: url('../images/iconsheet.png') no-repeat -102px -547px;
+    width: 46px;
+    height: 46px;
+    display: block;
+    margin: 10px auto;
+    }
+
+/* map it actions end */
+
+/**footer sidebar */
+
+
+
+#sidebar footer{
+    background: 
+#F2EEE9; padding: 3% 7%; position: relative; z-index: 999999;
+height: 67px;
+border-top: 1px solid #fafafa;
+
+}
+
+/* adjus style on a mac 
+
+.mac #sidebar footer{height: 73px;}
+
+/* adjust style on a mac */
+
+.map03 #sidebar .botsec footer.botsec-foot a{font-size: 1em; text-decoration: none; color: #5c5148; line-height: 3.5em;
+    padding: 2%; 
+}
+.map03 #sidebar .botsec footer.botsec-foot a.skipd{ margin: 0 1.2%; border-radius: 6px;}
+.map03 #sidebar .botsec footer.botsec-foot a.skipd:hover{text-decoration: none; background: #ded0bf;}
+.map03 #sidebar .botsec footer.botsec-foot a.skipd:active{border-top: 1px solid #5c5148; background: #C8BBAC;}
+
+.map03 #sidebar .botsec footer.botsec-foot a:hover{text-decoration: underline;}
+
+.map03 #sidebar .botsec footer.botsec-foot button{    
+    float: right;
+    background: #d8d8d8;
+    font-size: 1.429em;
+    text-decoration: none;
+    color: #fff;
+    border: 0;
+    padding: 3%;
+    border-radius: 6px;
+    text-align: left;
+
+ }
+ .map03 #sidebar .botsec footer.botsec-foot button.active{    
+    float: right;
+    background: #5fb45e;
+    font-size: 1.429em;
+    text-decoration: none;
+    color: #fff;
+    border: 0;
+    padding: 3%;
+    border-radius: 6px;
+
+ }
+
+  .map03 #sidebar .botsec footer.botsec-foot button.active:active{
+    background: #56A255;
+    border-top: 2px solid #006400;
+    padding: 3% 3% 2.5% 3%;
+
+  }
+ .map03 #sidebar .botsec footer.botsec-foot button i.icon{    
+    display: inline-block;
+    background: url('../images/iconsheet.png') no-repeat -77px -84px;
+    width: 17px;
+    height: 27px;
+    margin: 0px 0 0 15px;
+    float: right;
+}
+
+/** add images */
+
+.map04 #sidebar .topsec .prgrs_trckr .trck { 
+    width: 75%;
+}
+
+.map04 #sidebar .topsec .prgrs_trckr .trck span i:nth-child(1){
+    color: #5FB45E;
+}
+.map04 #sidebar .topsec .prgrs_trckr .trck span i:nth-child(2){
+    color: #5FB45E;
+}
+   
+.map04 .input-wcaption div.input-wcaption{position: relative;}
+
+.map04 .input-wcaption .dcaption{float: left; width: 60px; background: #eae3da;  
+    font-color: #5c5148;
+    font-size: 1em; 
+    padding: 3.4%;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    margin-bottom: -50px;
+    position: relative;
+}
+.map04 .input-wcaption input{}
+
+.map04 .c2 .dcaption{
+    width: 85px; 
+}
+
+.map04 .img-upld{
+    text-align: center; 
+    width: 100%; 
+    background: #eae3da;
+    border-radius: 10px;
+    padding: 5% 3%;
+    color: #5c5148;
+}
+
+.map04 .img-upld h3{margin: 5px 0 5px 0;}
+.map04 .img-upld i.icon{
+    background: url('../images/iconsheet.png') no-repeat -288px -2px;
+    width: 63px;
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+.map04 .img-upld a{text-decoration: underline; color: #5c5148;}
+
+.map04 .opn-slct select{border: 0; border-radius: 3px; font-size: 1.429em; padding: 2%;
+     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width:45.5%;
+    background: #fff url('../images/selectbg2.png') 98% 47% repeat-y;
+    font-weight: 300;
+}
+.map04 .opn-slct span.slctdash{font-size: 2em; margin: 0 2%; }
+.map04 .opn-slct span.daysofweek{font-weight: 300; font-size: 1em; padding-top: 2%; display: block;}
+
+/*daysweek box*/
+
+.map04 .opn-slct .daysweekbox{display: none;}
+
+.map04 .opn-slct .daysweekbox select{width: 27%; font-size: 1em;}
+
+/* end daysweek box */
+
+
+.map04 .opn-slct span a{color: #282828; text-decoration: underline;}
+.map04 .price-range .prycrng-mtr{
+    width: 250px;
+    float: left;
+}
+
+.map04 .price-range .prycrng-mtr select{float: left; width: 40%; padding: 3% 0px; display: inline-block; font-size: 1.429em; }
+.map04 .price-range .prycrng-mtr .slctdash{float: left; margin: 0 4%; font-size: 2em;}
+
+.map04 .price-range select{float: right; border: 0; border-radius: 3px; font-size: 1.429em; padding: 2% 0;
+     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 28%;
+    background: #fff url('../images/selectbg2.png') 100% 47% repeat-y;
+    font-weight: 300;
+}
+
+.map04 .wifi-slct select{border: 0; border-radius: 3px; font-size: 1.429em; padding: 2%;
+     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width:45.5%;
+    background: #fff url('../images/selectbg2.png') 98% 47% repeat-y;
+    font-weight: 300;
+}
+.map04 .wifi-slct span.slctdash{font-size: 2em; margin: 0 2%; }
+.map04 .wifi-slct span.desc{font-weight: 300; font-size: 1em; padding-top: 2%; display: block;}
+.map04 .wifi-slct span a{color: #282828; text-decoration: underline;}
+.map04 .wifi-slct span.desc span{margin-right: 35%; font-size: 1em; font-weight: 300;}
+
+.map04 .daysweekbox label.checkbox{float: left; width: 35%; padding-top: 5px;}
+.map04 .daysweekbox label.checkbox input[type="checkbox"] {float: left; display: none;}
+.map04 .daysweekbox label.checkbox span.chckmrker {
+    display:inline-block;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px; 
+    background: #fff;
+    vertical-align:middle;
+    margin-right: 3%;
+    cursor: pointer;
+    float: left;
+
+}
+.map04 .daysweekbox label.checkbox :checked + span.chckmrker {
+    background: #fff url('../images/iconsheet.png') no-repeat -303px -555px;
+    border: 0;
+
+}
+
+.map04 .daysweekbox label.checkbox span.chcklabl{
+    float: left;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.map04 .daysweekbox .chck-all{margin-top: 15px; display: block;}
+
+
+/** place listing */
+
+.greybar {background: #5c5148; width: 100%; padding: 3%;}
+.greybar select{
+     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #e9e4de;
+    border-radius: 6px;
+    font-size: 0.714em;
+    color: #40382c;
+    width: 100%;
+    padding: 3.5% 8% 3.5% 1%;
+    cursor: pointer;
+}
+
+.mac .greybar select{
+    padding: 3.5% 8% 3.5% 5%;
+}
+
+.greybar .catselct{float: left; width: 35%; position: relative;}
+.greybar .catselct i{
+    background: transparent url("../images/iconsheet.png") no-repeat scroll -416px -40px;
+    width: 7px;
+    height: 6px;
+    display: inline-block;
+    float: left;
+    margin: 9% 87%;
+    position: absolute;
+
+}
+
+.greybar button{float: right; background: #5fb45e; border-radius: 6px;
+    border: none; padding: 1% 2%;
+    color: #fff;
+    width: 35%;
+    font-size: 1em;
+    text-align: right;
+    margin: 0;
+}
+.greybar button:active{
+    border-top: 1px solid #002D00;
+    background: #56A255;
+    padding: 1% 2% 0.7%;
+}
+.greybar button i{background: url('../images/iconsheet.png') no-repeat -4px -170px;
+    width: 18px;
+    height: 20px; display: inline-block; font-style: normal; color: #5fb45e; font-size: 0.714em;
+    padding-top: 2%; text-align: center;
+    float: left;
+}
+
+.map05 #sidebar .botsec {
+    height: 405px; 
+}
+
+/* style when on mac 
+
+.mac .div05 #sidebar .botsec {
+    height: 63%; 
+}
+
+/*syle when on mac */
+
+.map05 #sidebar .botsec .wrapper{
+    padding: 0;
+}
+
+.map05 section.place-listing{position: relative; border-bottom: 1px solid #dbd4cb; padding: 3%; cursor: pointer;}
+
+.map05 section.place-listing:last-child{border-bottom: none;}
+
+.map05 section.place-listing:hover{background: rgba(300, 300, 300, 0.4); 
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;}
+
+.map05 section.place-listing:hover > .the-place h1{}
+
+.map05 section.place-listing .place-letter{font-style: normal; position: absolute; float: left; margin-left: -70%; z-index: 99999999;}
+
+.map05 section.place-listing .the-place{width: 70%; text-align: left; float: left;}
+
+.map05 section.place-listing .the-place h1{text-transform: capitalize; margin: 0; text-indent: left; color: #734723; }
+
+.map05 #sidebar .botsec h1{text-align: left; font-size: 1.429em;}
+
+.map05 section.place-listing .the-place small{color: #40382c; font-weight: 300; font-size: 0.714em;}
+.map05 section.place-listing .the-place p{padding-top: 3%;
+        color: #84776c;
+        font-size: 1em;
+        font-weight: 300;
+}
+
+.map05 section.place-listing .micro-data{width: 30%; float: right; padding-left: 3%}
+
+.map05 section.place-listing .micro-data .stars i{}
+
+.map05 section.place-listing .micro-data .stars i.star-active{
+    display: inline-block; 
+    background: url('../images/iconsheet.png') no-repeat -71px -163px;
+    width: 17px;
+    height: 16px;}
+.map05 section.place-listing .micro-data .stars i.star-inactive{
+    display: inline-block; 
+    background: url('../images/iconsheet.png') no-repeat -91px -163px;
+    width: 17px;
+    height: 16px;
+}
+
+.map05 section.place-listing .micro-data .time{font-size: 0.857em; color: #50b621;}
+
+.map05 section.place-listing .micro-data .wifi{color: #a2a2a2; font-size: 1em;}
+
+
+
+#map .pin{position: absolute; z-index: 9999999999; margin: 30% 50%;}
+#map .pin2{ margin: 20% 80%;}
+#map .pin3{margin: 60% 40%;}
+#map .pin-active i{background: url('../images/iconsheet.png') no-repeat -144px -126px;}
+#map .pin-inactive i{background: url('../images/iconsheet.png') no-repeat -144px -80px;}
+#map .pin i{
+    display: block; margin-left: 13%; 
+    position: relative; z-index: 9;
+    text-align: center;
+    color: #fff;
+    padding-top: 10%;
+    font-size: 1.286em;
+     width: 35px;
+    height: 40px;
+}
+
+#map .pin .shadow{
+    background: url('../images/iconsheet.png') no-repeat -144px -170px;
+    width: 50px;
+    height: 22px;
+    position: relative;
+    z-index: 8;
+    margin-top: -15%;
+}
+
+/** view place*/
+
+.map06 #map{width: 65%;}
+.map06 #sidebar{width:35%;}
+.map06 .greybar{display: none;}
+.map06 #sidebar .bgtopsec{background: rgba(0, 0, 0, 0.38) url('../images/trade-2-version-2-imp.jpg'); background-size: 100%;}
+
+.map06 #sidebar .botsec {
+    height: 465px;
+}
+
+.map06 .botsec section.sec1{padding: 3%;}
+.map06 #sidebar .botsec h1{margin: 0; float: left; font-size: 1.857em; color: #40382c;}
+.map06 .botsec section.sec1 .stars{width: 35%; float: right;}
+
+.map06 .botsec section.sec1 .stars i{}
+
+.map06 .botsec section.sec1 .stars i.star-active{
+    display: inline-block; 
+    background: url('../images/iconsheet.png') no-repeat -72px -126px;
+    width: 26px;
+    height: 26px;}
+.map06 .botsec section.sec1 .stars i.star-inactive{
+    display: inline-block; 
+    background: url('../images/iconsheet.png') no-repeat -101px -125px;
+    width: 27px;
+    height: 27px;
+}
+.map06 .botsec section.sec1 p{font-size: 1.3em; font-weight: 300;}
+
+.map06 .botsec section.sec2 {padding: 0; width: 100%;}
+.map06 .botsec section.sec2 img{
+    ;display: inline-block; width: 25%; max-width:100%;
+max-height:100%;float: left; cursor: pointer;}
+
+.map06 .botsec section.sec2 a{display: inline-block; position: relative; float: left; width: 25%; max-height:100%; background: #000; text-decoration: none;}
+.map06 .botsec section.sec2 a img{width: 100%; opacity: 0.5; }
+
+.map06 .botsec section.sec2 a span{
+    display: block;
+    font-weight: 300;
+    font-size: 2.857em;
+    z-index: 9999; 
+    color: #fff; 
+    position: absolute; 
+    text-align: center;
+    padding: 30%;
+}
+
+.map06 .botsec section.sec3, section.sec4, section.sec5{padding: 3%;}
+
+.map06 .botsec section.sec3 h3, section.sec4 h3, section.sec5 h3{margin: 0; padding-top: 2%; color: #282828; font-size: 1em;}
+
+.map06 .botsec section.sec3 p, section.sec4 p, section.sec5 p{margin-top: 3%; 
+    padding-left: 6%;
+    color: #4e4e4e; 
+    font-weight: 300;
+    font-size: 1.5em;}
+.map06 .botsec section.sec3 h3 i{background: url('../images/iconsheet.png') no-repeat -242px -554px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    float: left;
+    margin-right: 2%;
+}
+.map06 .botsec section.sec4 h3 i{background: url('../images/iconsheet.png') no-repeat -215px -554px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    float: left;
+    margin-right: 2%;
+}
+.map06 .botsec section.sec5 h3 i{background: url('../images/iconsheet.png') no-repeat -267px -559px;
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    float: left;
+    margin-right: 2%;
+}
+
+.map06 footer button{float: left; border: 1px solid #beb09f; border-radius: 5px; background: none; font-size: 1.429em; color: #5c5148; font-weight: 300; padding: 1% 8%;}
+
+.map06 footer button:hover{background: rgba(92, 81, 72, 0.1); 
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+.map06 footer .footer-controls{float: right; font-size: 1.143em; font-weight: 300; color: #5c5148; line-height: 2.5em;}
+
+.map06 footer .footer-controls a:nth-child(1){color: #359738;}
+.map06 footer .footer-controls a:nth-child(2){color: #E35667;}
+
+
+
+/** The Profile Page **/
+
+#profile #profile-header{ 
+    background: #5c5148;
+    padding: 2% 15%;
+    height: 210px;
+}
+#profile-header .the-profile{float: left; color: #fff;}
+#profile-header .the-profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 3%;
+    border: 2px solid #fff;
+}
+
+#profile-header .the-profile h1{
+    margin: 6% 0 0 0;
+    display: block;
+}
+
+#profile-header .the-profile a{
+    color: #ccc;
+    margin-right: 2%;
+    display: inline-block;
+
+}
+#profile-header .profile-controls{
+    float: right;
+    -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 100%;
+}
+#profile-header .profile-controls button.follow-me{
+    vertical-align: center;
+     position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+    color: #fff;
+    background: #ed642d;
+    padding: 2% 10%;
+    border-radius: 6px;
+    border: 0;
+    display: block;
+    font-size: 1.3em;
+    font-weight: 300;
+    float: right;
+
+
+}
+
+
+#profile nav#profile-nav{
+    padding: 1% 15% 0   ; 
+    background: #5c5148;
+}
+#profile nav#profile-nav ul{margin: 0; padding: 0; list-style-type: none; }
+#profile nav#profile-nav ul li{float: left; display: inline-block; margin: 0 3px;  border-top-left-radius: 4px;}
+#profile nav#profile-nav ul li.active{opacity: 1;}
+#profile nav#profile-nav ul li{opacity: 0.7;}
+#profile nav#profile-nav ul li:hover{opacity: 1; transition: 0.1s;}
+#profile nav#profile-nav ul li a{
+    padding: 10px 15px; 
+    display: inline-block; 
+    background: #f2eee9; 
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #5c5148;
+    text-decoration: none;
+}
+
+section#the-list{
+    padding: 2% 15%;
+    float: left;
+
+}
+
+section#the-list aside{
+    float: left;
+    margin-top: 3%;
+}
+
+section#the-list aside img{  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-opacity: 0.4;
+    -moz-opacity: 0.4;
+    -ms-opacity: 0.4;
+    -o-opacity: 0.4;
+    opacity: 0.4;
+
+}
+
+section#the-list aside div:hover > img{
+    opacity: 0.6;
+    -webkit-opacity: 0.6;
+    -moz-opacity: 0.6;
+    -ms-opacity: 0.6;
+    -0-opacity: 0.6;
+    transition: 0.1s;
+}
+
+section#the-list aside div{position: relative; background: #000; overflow: hidden; 
+    cursor: pointer;
+
+    box-shadow: 0px 0px 1px 0px #0f0f0f;
+}
+
+
+
+section#the-list aside div h3{position: absolute; 
+    color: #fff; 
+    text-align: 
+    center; 
+    width: 100%; 
+    display: block; 
+    margin: 50% 0 0 0;
+    z-index: 9999;
+    
+
+}
+
+section#the-list aside.add-more{}
+
+section#the-list aside.add-more div:hover > img{opacity: 0.2;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.6;
+    -webkit-opacity: 0.6;
+    -moz-opacity: 0.6;
+    -ms-opacity: 0.6;
+    -0-opacity: 0.6;
+    transition: 0.1s;}
+
+
+
+
+/** Login Page **/
+.login .welcome{min-height: 370px;}
+
+.login-panel{display: none;}
+.login-panel .panel-container{
+    width: 463px;
+    margin: 5% auto;
+}
+
+
+.reg-panel{}
+.reg-panel .panel-container{
+    width: 463px;
+    margin: 5% auto;}
+
+.login-panel button{margin: 0 10px; float: left;
+
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+    -ms-transition: 0.1s;
+}
+
+.login-panel button.fb-login{width: 200px; height: 40px; background: url('../images/fb-login.png') no-repeat; border: 0;}
+.login-panel button.twt-login{width: 200px; height: 40px; background: url('../images/twt-login.png') no-repeat; border: 0;}
+.login-panel button:hover{opacity: 0.6; 
+}
+
+
+.reg-panel button{margin: 0 10px; float: left;  transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+    -ms-transition: 0.1s;}
+.reg-panel button:hover{opacity: 0.6;
+
+
+}
+
+.reg-panel button.fb-reg{width: 200px; height: 40px; background: url('../images/fb-signin.png') no-repeat; border: 0;}
+.reg-panel button.twt-reg{width: 200px; height: 40px; background: url('../images/twt-signin.png') no-repeat; border: 0;}
+
+
+.login .welcome span{text-align: center; display: block; position: relative; z-index: 9999; background: #fff; font-size: 1.5em; width: 25%; margin: 0 auto; color: #ccc; font-weight: 300;}
+.login .welcome .grey-hr{width: 55%; height: 5px; border-top: 1px solid #ccc; margin: 0 auto; margin-top: -15px;  }
+
+.login .welcome i{font-style: normal; font-weight: 300; display: inline-block; float: left; line-height: 2.5em;}
+
